@@ -1,3 +1,5 @@
+/*
+
 .heading {
   text-align: center;
   font-weight: 700;
@@ -17,6 +19,14 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .container {
@@ -47,3 +57,78 @@ body {
   font-size: 18px;
   color: #007bff;
 }
+*/
+
+/* App.css */
+
+/* Global styles */
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 30px auto;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  background-image: url('./assets/images/background_image_for_clock.jpg'); /* Replace with the path to your texture image */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for a subtle depth effect */
+  
+}
+
+/* Heading component styles */
+.heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* ClockSlogan component styles */
+.slogan {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+/* CurrentTime component styles */
+.time-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time-container p {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.time-text {
+  font-size: 18px;
+  color: #007bff;
+}
+
+@keyframes fadeInSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
